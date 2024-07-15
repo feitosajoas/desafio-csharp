@@ -1,0 +1,20 @@
+﻿<form id="formCadastroBeneficiarios" method="post" action="@Url.Action("Incluir", "Beneficiario")">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="Nome">Nome:</label>
+                <input required="required" type="text" class="form-control" id="NomeBeneficiario" name="Nome" placeholder="Ex.: João" maxlength="50">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label for="CPF">CPF:</label>
+                <input required="required" type="text" class="form-control" id="CPFBeneficiario" name="CPF" placeholder="Ex.: 010.011.111-00" maxlength="14">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <button type="submit" id="btnIncluirBeneficiario" class="btn btn-success" style="margin-top: 1.7em">Incluir</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,12 @@
+﻿@{
+    Layout = null;
+}
+
+@section scripts{
+    <script>
+        var urlPostBeneficiario = '@Url.Action("Incluir", "Beneficiario", new { area = "" })';
+    </script>
+    @Scripts.Render("~/bundles/beneficiarios")
+}
+
+@Html.Partial("_Form")

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Cadastrar Cliente";
+}
+@section scripts{
+    <script>
+        var urlPost = '@Url.Action("Incluir", "Cliente", new { area = "" })';
+        $(document).ready(function () {
+            var url = window.location.href;
+            if (url.indexOf('/Alterar/') > -1) {
+                $('#btnAddBeneficiario').show();
+            } else {
+                $('#btnAddBeneficiario').hide();
+            }
+        });
+    </script>
+    @Scripts.Render("~/bundles/clientes")
+}
+<h2>@Html.Raw(ViewBag.Title)</h2>
+@Html.Partial("Forms")
